@@ -1,0 +1,383 @@
+/*========================================
+General Styles
+======================================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8e2bb42;
+    color: #333;
+    margin-top: 5rem;
+}
+/* =======================================
+Background Images
+========================================= */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: opacity(80%);
+    border-radius: 0 0 80px 80px;
+    box-shadow: 0px 6px 0 rgba(0, 0, 0, 0.1);
+}
+#admin-bg-img {
+    filter: opacity(15%);
+    position: fixed;
+
+}
+/* ========================================
+Header & Navigation
+========================================== */
+header nav {
+    border-bottom-left-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem; 
+    /* background-color: #d0d1d0; */
+    background-color: #f9f9f9;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(133, 133, 133);
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 90%;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+#logo a{
+    text-decoration: none;
+    color: orangered;
+    font-weight: bolder;
+    font-size: larger;
+}
+nav a img {
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+nav .flex-container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+hr {
+    padding: 0;
+    margin: 0;
+    border-color: orangered;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 6px;
+    margin: 6px;
+}
+
+
+header nav ul li a:hover {
+    border-bottom: 2px solid orangered;
+    border-radius: 8px;
+    transition: border-radius 0.7s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+nav li a.current{
+    color: orangered;
+ }
+/* ============================================
+Main and Section Layouts
+============================================= */
+main {
+    padding: 2rem;
+    padding-top: 1rem;
+    margin-bottom: 3.5rem;
+}
+
+h1{
+    color: orangered;
+    text-align: center;
+}
+
+ /* ===============================================
+ Home Page 
+ ==================================================*/
+.home-welcome{
+    margin-top: 200px;
+    margin-bottom: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-h1{
+    font-size: xxx-large;
+    margin-bottom: 0;
+    color: rgb(255, 233, 147);
+}
+
+.home-welcome h1{
+    font-size: 20px;
+    color: rgb(255, 122, 74);
+}
+
+.typing {
+  border-right: 2px solid white;
+  overflow: hidden;
+  white-space: nowrap;
+  width: fit-content;
+  box-sizing: border-box;
+  color: orangered;
+  font-size: 1.5rem;
+  animation: typing 3s steps(60, end), blink-caret 0.75s step-end infinite;
+  font-family: monospace;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  50% { border-color: transparent; }
+  
+}
+
+.home-welcome a {
+    text-decoration: none;
+    color: white;
+}
+#home-content {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.home-section{
+    margin: 10px;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgb(236, 236, 236);
+    padding: 50px;
+    border-radius: 50px 0 50px 0;
+}
+div.description h1 a:hover{
+    font-size: larger;
+    /* transform: rotate(180deg); */
+    transition: all 1s ease;
+}
+
+/* .home-sction img{
+    box-sizing: border-box;
+} */
+
+.home-section a img{
+    transition: transform 0.5s ease-in-out;
+}
+.home-section a img:hover{
+    transform: scale(1.1);
+    transform: rotate(360deg);
+}
+.home-section .description{
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px 0 50px 0px;
+    padding: 20px;
+    text-align: justify;
+}
+
+/* =================================================
+About Page
+================================================== */
+#about-h1 {
+    font-size: 200px;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    color: rgb(0, 255, 140);
+}
+
+#about-content {
+    box-sizing: border-box;
+}
+.about-section-left{
+    margin: 10px;
+    margin-right: auto;
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    justify-content: end;
+    overflow: hidden;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgb(236, 236, 236);
+    padding: 50px;
+    border-radius: 0 20% 0 20%;
+}
+.about-section-right{
+    margin: 10px;
+    margin-left: auto;
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgb(236, 236, 236);
+    padding: 50px;
+    border-radius: 0 20% 0 32%;
+    overflow: hidden;
+}
+div.description h1 a:hover{
+    font-size: larger;
+    background-color: lightgreen;
+    padding: 8px;
+    border-radius: 8px;
+    /* transform: rotate(180deg); */
+    transition: all 1s ease;
+}
+.about-section-left a img{
+    transition: transform 0.5s ease-in-out;
+}
+.about-section-left a img:hover{
+    transform: scale(1.1);
+    transform: rotate(360deg);
+}
+.about-section-left .description, .about-section-right .description{
+    margin-left: 15px;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 50px 0 50px;
+    padding: 20px;
+    text-align: justify;
+
+}
+
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+
+
+/* ============================================
+Forms 
+================================================*/
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 92%;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-p {
+    text-align: center;
+    line-height: 18px;
+    background-color: #d0d1d0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    border-radius: 100px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* =====================================================
+ContacUs Submmit activity 
+====================================================== */
+#thankYouMessage {
+    display: none;
+    color: green;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#submit-message {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ===================================================
+Footer
+==================================================== */
+footer {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #d7d7d7;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-home-about {
+    bottom: 0; 
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+    box-sizing: border-box;
+}
