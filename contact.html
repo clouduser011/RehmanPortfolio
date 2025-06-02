@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                    <a href="index.html" ><img src="images/A-R Portfolio logo .jpg" alt="AR Pic" width="50" height="50"></a></li>
+                    <a href="index.html">Abdul Rehman</a></li>
+            </div>
+            <div id="links">
+            <ul class="flex-container">
+                <li><a href="index.html">Home</a></li><hr>
+                <li><a href="about.html">About</a></li><hr>
+                <li><a href="resume.html">Resume</a></li><hr>
+                <li><a class="current" href="contact.html">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="content">
+        <img class="background-image" src="images/contact us bg img.jpg" alt="">
+
+        <section>
+            <h1>Contact Us</h1>
+            
+            <form action="https://formspree.io/f/xblyjlwl" method="POST" class="contact-form" id="contactForm" onsubmit="return handleSubmit(event)">
+
+                <section style="color: orangered; font-weight: bold; text-align: center;">We would love to hear from you! </section>
+                <p class="form-p">Please fill out the form below to get in touch with us.</p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <div id="submit-message">
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                    <!-- Thank You Message -->
+                    <div id="thankYouMessage">
+                        Thank you for contacting us! <br> We will get back to you soon.
+                    </div>
+                </div>
+            </form>
+
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024. All rights reserved.</p> 
+    </footer>
+    <script src="JS/script.js"></script>
+</body>
+</html>
